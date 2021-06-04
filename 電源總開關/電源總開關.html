@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>解謎</title>
+    <style>
+        head{
+            font-family: 微軟正黑體 新細明體;
+        }
+        div{
+            border: solid black 3px;
+            margin: 5px;
+            width: 300px;
+            padding: 2px;
+        }
+        a:link{
+            color: black;
+            text-decoration: none;
+
+        }
+        a:visited{
+            color: black;
+            text-decoration: none;
+        }
+        .pai{
+            display: flex;
+        }
+        button{
+            margin:0px 10px;
+            background-color: rgb(255, 161, 161);
+            
+        }
+    </style>
+</head>
+<body>
+    <div>現在位置：學務處/電源總開關</div>
+    <div class="pai">
+        <button onclick="judge(1)" value="0" id="bt1">１</button>
+        <button onclick="judge(2)" value="0" id="bt2">２</button>
+        <button onclick="judge(3)" value="0" id="bt3">３</button>
+    </div>
+    <div class="pai">
+        <button onclick="judge(4)" value="0" id="bt4">４</button>
+        <button onclick="judge(5)" value="0" id="bt5">５</button>
+        <button onclick="judge(6)" value="0" id="bt6">６</button>
+    </div>
+    <div class="pai">
+        <button onclick="judge(7)" value="0" id="bt7">７</button>
+        <button onclick="judge(8)" value="0" id="bt8">８</button>
+        <button onclick="judge(9)" value="0" id="bt9">９</button>
+    </div>
+    <div class="pai">
+        <button onclick="judge(10)" value="0" id="bt10">10</button>
+    </div>
+    <script>
+        let arr = [];
+        let light = [];
+        for(let i=0;i<10;i++){
+            str = 'bt' + (i+1);
+            arr[i] = document.getElementById(str);
+        }
+        function judge(v){
+            
+            switch(v){
+                case 1:
+                    if(bt1.value == 0){
+                            bt1.style.backgroundColor = 'rgb(161,255,161)';
+                            return bt1.value = 1;
+                        }
+                    else{
+                        bt1.style.backgroundColor = 'rgb(255,161,161)';
+                        return bt1.value = 0;
+                    }                    
+                case 2:
+                    if(bt2.value == 0){
+                                bt2.style.backgroundColor = 'rgb(161,255,161)';
+                                return bt2.value = 1;
+                            }
+                    else{
+                        bt2.style.backgroundColor = 'rgb(255,161,161)';
+                        return bt2.value = 0;
+                    }
+                case 3:
+                    if(bt3.value == 0){
+                                bt3.style.backgroundColor = 'rgb(161,255,161)';
+                                return bt3.value = 1;
+                            }
+                    else{
+                        bt3.style.backgroundColor = 'rgb(255,161,161)';
+                        return bt3.value = 0;
+                    }
+                case 4:
+                    if(bt4.value == 0){
+                                bt4.style.backgroundColor = 'rgb(161,255,161)';
+                                return bt4.value = 1;
+                            }
+                    else{
+                        bt4.style.backgroundColor = 'rgb(255,161,161)';
+                        return bt4.value = 0;
+                    }
+                case 5:
+                    if(bt5.value == 0){
+                        bt5.style.backgroundColor = 'rgb(161,255,161)';
+                        return bt5.value = 1;
+                    }
+                    else{
+                        bt5.style.backgroundColor = 'rgb(255,161,161)';
+                        return bt5.value = 0;
+                    }
+                case 6:
+                    if(bt6.value == 0){
+                        bt6.style.backgroundColor = 'rgb(161,255,161)';
+                        return bt6.value = 1;
+                    }
+                    else{
+                        bt6.style.backgroundColor = 'rgb(255,161,161)';
+                        return bt6.value = 0;
+                    }
+                case 7:
+                    if(bt7.value == 0){
+                        bt7.style.backgroundColor = 'rgb(161,255,161)';
+                        return bt7.value = 1;
+                    }
+                    else{
+                        bt7.style.backgroundColor = 'rgb(255,161,161)';
+                        return bt7.value = 0;
+                    }
+                case 8:
+                    if(bt8.value == 0){
+                        bt8.style.backgroundColor = 'rgb(161,255,161)';
+                        return bt8.value = 1;
+                    }
+                    else{
+                        bt8.style.backgroundColor = 'rgb(255,161,161)';
+                        return bt8.value = 0;
+                    }     
+                case 9:
+                    if(bt9.value == 0){
+                        bt9.style.backgroundColor = 'rgb(161,255,161)';
+                        return bt9.value = 1;
+                    }
+                    else{
+                        bt9.style.backgroundColor = 'rgb(255,161,161)';
+                        return bt9.value = 0;
+                    }
+                case 10:
+                    if(bt10.value == 0){
+                        bt10.style.backgroundColor = 'rgb(161,255,161)';
+                        return bt10.value = 1;
+                    }
+                    else{
+                        bt10.style.backgroundColor = 'rgb(255,161,161)';
+                        return bt10.value = 0;
+                    }                             
+            }
+        }
+    </script>
+</body>
+</html>
