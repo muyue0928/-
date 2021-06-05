@@ -53,8 +53,9 @@
     </div>
     <div class="pai">
         <button onclick="judge(10)" value="0" id="bt10">10</button>
+        <button onclick="req();">SEND ANS</button>
     </div>
-    <div id="result"></div>
+    <div id="result" ></div>
     <script>
         let result = document.getElementById('result');
         let arr = [];
@@ -158,7 +159,12 @@
                     }                             
             }
             if(bt4.value == 1 && bt5.value == 1 && bt6.value == 1 && bt7.value == 1 && bt10.value == 1){
-                result.innerHTML = "*喀擦，隨著學務處的燈亮起，你也看到了一封信<br><a href='終於要見到學長了嗎.txt'>點我拿起</a>"
+                result.innerHTML = "*喀擦，隨著學務處的燈亮起，你也看到了一封信<br><a href='終於要見到學長了嗎.txt'>點我拿起</a>";
+            }
+        }
+        function req(){
+            if(bt4.value == 1 && bt5.value == 1 && bt6.value == 1 && bt7.value == 1 && bt10.value == 1){
+                result.innerHTML = "*喀擦，隨著學務處的燈亮起，你也看到了一封信<br><a href='終於要見到學長了嗎.txt'>點我拿起</a>";
             }
         }
     </script>
