@@ -54,7 +54,9 @@
     <div class="pai">
         <button onclick="judge(10)" value="0" id="bt10">10</button>
     </div>
+    <div id="result"></div>
     <script>
+        let result = document.getElementById('result');
         let arr = [];
         let light = [];
         for(let i=0;i<10;i++){
@@ -154,6 +156,9 @@
                         bt10.style.backgroundColor = 'rgb(255,161,161)';
                         return bt10.value = 0;
                     }                             
+            }
+            if(bt4.value == 1 && bt5.value == 1 && bt6.value == 1 && bt7.value == 1 && bt10.value == 1){
+                result.innerHTML = "*喀擦，隨著學務處的燈亮起，你也看到了一封信<br><a href=''>點我拿起</a>"
             }
         }
     </script>
